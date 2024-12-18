@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script>
+
+        function checkValidation(){
+
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+
+            if(name==""){
+					document.getElementById("nameerror").innerHTML="Please Enter Name";
+                    document.getElementById("nameerror").style.color="orange";
+                    document.getElementById("name").focus();
+					
+					return false;
+				}
+
+            if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+                    document.getElementById("nameerror").innerHTML="Invalied Name";
+                    document.getElementById("nameerror").style.color="red";
+                    document.getElementById("name").focus();
+					
+					return false;
+                }    
+
+                
+            if(email==''){
+                    document.getElementById('emailerror').innerHTML='Please Enter Email';
+                    document.getElementById('emailerror').style.color='orange';
+                    document.getElementById('email').focus();
+
+                    return false;
+            }
+
+            if(message==''){
+                    document.getElementById('messageerror').innerHTML='Please Enter Message';
+                    document.getElementById('messageerror').style.color='orange';
+                    document.getElementById('message').focus();
+
+                    return false;
+            }
+            
+            
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+
+    <header>
+
+        <div class="logo">
+            <a href="main.html">
+                <img src="The-Kingsbury-Logo-New-Color-version.png" alt="">
+            </a>
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dine.html">Dine</a></li>
+
+            
+            <a href="signup/login.php">
+                <button type="submit" name="submit" class="btn1">Login</button>
+            </a>
+            
+        </ul>
+
+    </header>
+
+    <h2>CONTACT US</h2>
+
+    <div class="contact">
+
+        <div class="co1">
+            <h3>Address</h3>
+            <p>48, Janadhipathi Mawatha, Colombo 01, <br/>Sri Lanaka.</p>
+            
+        </div>
+
+        <div class="co">
+            <h3>Phone Number</h3>
+            <p>+94 0112877857</p>
+        </div>
+
+        <div class="co">
+            <h3>E-mail</h3>
+            <p>kingsbury@gmail.com</p>
+        </div>
+
+
+    </div>
+
+    <h2>SEND AN E-MAIL</h2>
+
+
+    <div class="col">
+
+    
+    
+
+    <div class="from">
+
+        <form action="send.php" method="POST" class="register" onsubmit="return checkValidation()">
+
+        <div class="form-group">
+
+            <input type="text" name ="name" id = "name" class="form" placeholder="Name">
+            <br/>
+            <span id="nameerror"></span>
+        </div>
+
+        <br/>
+
+        <div class="form-group">
+
+            <input type="email" name ="email" id = "email" class="form" placeholder="E-mail">
+            <br/>
+            <span id="emailerror"></span>
+        </div>
+
+        <br/>
+
+        <div class="form-group">
+            <textarea name="message" id ='message' class="form1" cols="20" rows="5" placeholder="Message"></textarea>
+            <br/>
+            <span id="messageerror"></span>
+        </div>
+
+        <br/>
+
+        <div class="group">
+            <button type="submit" name="submit" class="btn1">Send</button> 
+            <button type="reset" value="reset" class="btn1">Reset</button>
+        </div>
+
+
+    </div>
+
+</form>
+
+</div>
+
+
+
+
+
+    <footer>
+
+        <div class="social">
+            <a href="https://www.facebook.com/TheKingsbury/"><img src="facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/thekingsbury/?hl=en"><img src="icons8-instagram-48.png" alt=""></a>
+            <a href="https://twitter.com/thekingsburylk?lang=en"><img src="icons8-twitter-48.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/thekingsburyhotel/?originalSubdomain=lk"><img src="icons8-linkedin-circled-48.png" alt=""></a>
+
+        </div>
+
+        <div class="info">
+            <p>Copyright &copy; 2022 - KINGSBURY HOTEL</p>
+            <p>Web Designed & Developed by Ghost</p>
+        </div>
+
+
+    </footer>
+    
+</body>
+</html>

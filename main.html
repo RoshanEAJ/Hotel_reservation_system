@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hotel</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="#">
+                <img src="The-Kingsbury-Logo-New-Color-version.png" alt="">
+            </a>
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dine.html">Dine</a></li>
+
+            
+            <a href="login.php">
+                <button type="submit" name="submit" class="btn1">Login</button>
+            </a>
+            
+        </ul>
+
+    </header>
+
+    <div class="bodyimg">
+        <img src ='' id = 'image'>
+    </div>
+
+    <script>
+        let image = document.getElementById('image');
+        let images = ['main/img1.jpg','main/img2.tif','main/pic-Kingsbury-Facade.jpg']
+
+        setInterval(function(){
+            let random = Math.floor(Math.random() * 3);
+            image.src = images[random];
+        }, 2000);
+    </script>
+
+    <div class="name">
+        <h4>KINGSBURY HOTEL</h4>
+    </div>
+    
+
+
+    <div class="content">
+        
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quidem nam fugiat repellat nihil quibusdam, 
+    autem doloremque. Quisquam a ad voluptatibus vitae placeat debitis cumque minus, voluptatum accusantium. Nobis, 
+    harum voluptatem hic ducimus reiciendis, iure dolores, quisquam rem enim vero numquam voluptas. Quod eveniet 
+    illum ipsam obcaecati exercitationem amet harum nesciunt. Voluptate, hic saepe. Aliquid pariatur perspiciatis 
+    distinctio est eligendi saepe sit repellendus dignissimos, ab unde laborum suscipit eos fuga earum enim itaque, 
+    tenetur laboriosam architecto? Quas provident magni veritatis ipsa, praesentium ex repellat quibusdam dolor 
+    maxime totam, error est? Nobis doloremque architecto doloribus iusto nemo unde aperiam corporis dolores.</p>
+
+    </div>
+
+
+    <div class="add">
+        <h4>Address : 48, Janadhipathi Mawatha, Colombo 01, Sri Lanka.
+            T : +94 112 421 221</h4>
+    </div>
+
+
+
+    <footer>
+
+        <div class="social">
+            <a href="https://www.facebook.com/TheKingsbury/"><img src="facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/thekingsbury/?hl=en"><img src="icons8-instagram-48.png" alt=""></a>
+            <a href="https://twitter.com/thekingsburylk?lang=en"><img src="icons8-twitter-48.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/thekingsburyhotel/?originalSubdomain=lk"><img src="icons8-linkedin-circled-48.png" alt=""></a>
+
+        </div>
+
+        <div class="info">
+            <p>Copyright &copy; 2022 - KINGSBURY HOTEL</p>
+            <p>Web Designed & Developed by Ghost</p>
+        </div>
+
+        
+    </footer>
+
+
+    
+</body>
+</html>

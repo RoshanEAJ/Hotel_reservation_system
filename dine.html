@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+
+        <div class="logo">
+            <a href="main.html">
+                <img src="The-Kingsbury-Logo-New-Color-version.png" alt="">
+            </a>
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dine.html">Dine</a></li>
+
+            
+            <a href="login.php">
+                <button type="submit" name="submit" class="btn1">Login</button>
+            </a>
+            
+        </ul>
+
+    </header>
+
+
+    <div class="bodyimg">
+        <img src ='' id = 'image'>
+    </div>
+
+    <script>
+
+
+        let image = document.getElementById('image');
+        let images = ['dine/cheesecake-1578694.jpg','dine/christmas-stollen-1768907.jpg','dine/club-sandwich-3538455.jpg','dine/dessert-3331910.jpg','dine/pizza-705061.jpg','dine/restaurant-3562900.jpg','dine/muffin-3607780.jpg']
+
+        setInterval(function(){
+            let random = Math.floor(Math.random() * images.length);
+            image.src = images[random];
+
+            
+        }, 3000);
+
+        
+    </script>
+
+    <div class="top">
+        <h2>Dine</h2>
+    </div>
+    
+
+
+    <img src ='silverware-1667987_1280.png' id = 'image'>
+
+    <section class="room">
+
+        <div class="row">
+          <div class="column">
+            <img class='bed' src="dine/sunset-1872423_1920.jpg" alt="Snow">
+
+            <p class="view">Ocean View Dining</p>
+      
+                  
+                  <div class="b">
+                    <a href="login.php">
+                      <button type="submit" name="submit" class="btn1">BOOK</button>
+                  </a>
+                  </div>
+      
+          </div>
+      
+      
+          <div class="column">
+            <img class='bed' src="dine/restaurant-449952_1920.jpg" alt="Forest" >
+      
+            
+              <p class="view">City View Dining</p>
+      
+            
+      
+                    <div class="b">
+                      <a href="login.php">
+                        <button type="submit" name="submit" class="btn1">BOOK</button>
+                    </a>
+                    </div>
+      
+            
+      
+            
+          </div>
+      
+      
+          <div class="column">
+            <img class='bed' src="dine/table-5356682_1920.jpg" alt="Mountains" >
+      
+            <p class="view">Garden View Dining</p>
+      
+      
+            <div class="b">
+              <a href="login.php">
+                <button type="submit" name="submit" class="btn1">BOOK</button>
+            </a>
+            </div>
+            
+          </div>
+        </div>
+      
+      
+      </section>
+
+
+    
+
+
+
+<footer>
+
+    <div class="social">
+        <a href="https://www.facebook.com/TheKingsbury/"><img src="facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/thekingsbury/?hl=en"><img src="icons8-instagram-48.png" alt=""></a>
+        <a href="https://twitter.com/thekingsburylk?lang=en"><img src="icons8-twitter-48.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/thekingsburyhotel/?originalSubdomain=lk"><img src="icons8-linkedin-circled-48.png" alt=""></a>
+
+    </div>
+
+    <div class="info">
+        <p>Copyright &copy; 2022 - KINGSBURY HOTEL</p>
+        <p>Web Designed & Developed by Ghost</p>
+    </div>
+
+
+</footer>
+
+
+</body>
+</html>

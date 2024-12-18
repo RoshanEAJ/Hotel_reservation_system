@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a stay</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+
+</head>
+<body>
+    
+    <header>
+
+        <div class="logo">
+            <a href="main.html">
+                <img src="The-Kingsbury-Logo-New-Color-version.png" alt="">
+            </a>
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dine.html">Dine</a></li>
+
+            
+            <a href="login.php">
+                <button type="submit" name="submit" class="btn1">Login</button>
+            </a>
+            
+        </ul>
+
+    </header>
+
+    <div class="form-log">
+        <div class="form-box">
+           <div class="title 1">
+              Login Form
+           </div>
+           <div class="title 2">
+              Register Form
+           </div>
+        </div>
+        <div class="container">
+           <div class="slides">
+              <input type="radio" name="slide" id="login" checked>
+              <input type="radio" name="slide" id="signup">
+              <label for="login" class="slide login">Login</label>
+              <label for="signup" class="slide signup">Register</label>
+              <div class="slider-tab"></div>
+           </div>
+           <div class="input">
+              <form action="login.php" class="login" method="post">
+                 <div class="text">
+                   <input type="email" name='email' class=""  placeholder="Email Address" required>
+                   
+                 </div>
+                 <div class="text">
+                   <input type="text" class="password" placeholder="Enter password" required>
+                 </div>
+                 <br>
+                 <div class="btn">
+                    <div class="btn"></div>
+                    <input type="submit" name ='login-btn' value="Login">
+                 </div>
+                 <br>
+                 <div class="signup-link">
+                  
+                    Not a member? <a href="">Register Now</a>
+                 
+                 </div>
+              </form>
+              <form action="register.php" class="register" method="post">
+
+
+               <div class="text">
+                  <input type="text" name='name' placeholder="Name" required>
+               </div>
+
+                 <div class="text">
+                    <input type="text" name='email' placeholder="Email Address" required>
+                 </div>
+                 <div class="text">
+                    <input type="password" name='pword' placeholder="Password" required>
+                 </div>
+                 <div class="text">
+                    <input type="password" name='con_pword' placeholder="Confirm password" required>
+                 </div>
+                 <div class="btn">
+                    <div class="btn"></div>
+                    <input type="submit" name='register-btn' value="Signup">
+                 </div>
+              </form>
+           </div>
+        </div>
+     </div>
+     <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (()=>{
+          loginForm.style.marginLeft = "-50%";
+          loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (()=>{
+          loginForm.style.marginLeft = "0%";
+          loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (()=>{
+          signupBtn.click();
+          return false;
+        });
+     </script>
+
+</body>
+</html>
